@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
+  let counter=0
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2 className='text-gray-100'>Счетчик:</h2>
+      <h1>{counter}</h1>
+      <div className=' '>
+        <button className='bg-red-300'>Плюс</button>
+        <button>Минус</button>
+      </div>
+
     </div>
   );
 }
